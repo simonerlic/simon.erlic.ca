@@ -1,0 +1,122 @@
+/* CSS Document */
+
+@font-face {
+	font-family: 'WorkSans-SemiBold';
+	src: url("../fonts/WorkSans-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: 'SpaceMono-Bold';
+	src: url("../fonts/SpaceMono-Bold.ttf");
+}
+
+#container {
+	position: relative;
+	margin: auto;
+	height: auto;
+	width: auto;
+	text-align: center;
+}
+
+#container p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+top {
+	font-family: 'WorkSans-SemiBold';
+    color: white;
+	font-size: 24px;
+    text-align: center;
+    background-color: #678BFF;
+    background-image: linear-gradient(to left, #678BFF, #5651E8);
+	line-height: 1.5;
+	position: absolute;
+	border-left: 30px solid white;
+	transition: opacity 0.2s;
+}
+
+top:hover{
+	opacity: 0;
+}
+
+topback {
+	font-family: 'WorkSans-SemiBold';
+    color: white;
+	font-size: 24px;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	line-height:1.5;
+	background-image: linear-gradient(to left, #678BFF, #5651E8);
+	border-left: 30px solid white;;
+}
+
+txt {
+    font-family: 'SpaceMono-Bold';
+    font-size: 24px;
+    text-align: left;
+    background: linear-gradient(#678BFF, #5651E8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	transition: opacity 0.3s;
+	position: relative;
+	border-left: 30px solid white;
+	line-height: 0.02;
+}
+
+header {
+	color: white;
+	font-family: 'WorkSans-SemiBold';
+	font-size: 60px;
+    text-align: center;
+    background-color: #678BFF;
+    background-image: linear-gradient(to left, #678BFF, #5651E8);
+	position: absolute;
+	transition: opacity 0.2s;
+	border-left: 30px solid white;
+}
+
+headerback {
+	font-family: 'WorkSans-SemiBold';
+	font-size: 60px;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	background-image: linear-gradient(to left, #678BFF, #5651E8);
+	border-left: 30px solid white;
+}
+
+span {
+
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0;  bottom: 0;
+}
+
+.center {
+  align: left;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.belowcenter {
+  align: left;
+  position: absolute;
+  top: 64%;
+  left: 10%;
+}
+
+#rcorners1 {
+    border-radius: 25px 50px;
+    background: #73AD21;
+    background-color: #678BFF;
+    background-image: linear-gradient(to bottom right, #678BFF, #5651E8);
+    padding: 0px;
+    width: 1053px;
+    height: 298px;
+	z-index: 1;
+}
