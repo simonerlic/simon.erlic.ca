@@ -2,4 +2,4 @@
 And this is my website.
 
 
-Most of this is just a placeholder at the moment.
+This website is just a placeholder for now, but I plan on updating it with something else soon.
