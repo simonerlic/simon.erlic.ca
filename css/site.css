@@ -120,3 +120,7 @@ span {
     height: 298px;
 	z-index: 1;
 }
+
+.fixed-footer{
+	bottom: 0;
+}
