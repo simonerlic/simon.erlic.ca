@@ -1,5 +1,3 @@
-## Hi, my name is Simon Erlic
-And this is my website.
+## Hi, this is my blog.
 
-
-This website is just a placeholder for now, but I plan on updating it with something else soon.
+Yes, it is based in Jekyll. And yes, it is a documentation template- but it works for what I want to do.
