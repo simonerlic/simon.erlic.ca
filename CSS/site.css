@@ -1,0 +1,83 @@
+/* CSS Document */
+
+@font-face {
+	font-family: 'WorkSans-SemiBold';
+	src: url("../fonts/WorkSans-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: 'SpaceMono-Bold';
+	src: url("../fonts/SpaceMono-Bold.ttf");
+}
+
+@font-face {
+	font-family: 'SpaceMono-Regular';
+	src: url("../fonts/SpaceMono-Regular.ttf");
+}
+
+header {
+	color: black;
+	font-family: 'SpaceMono-Bold';
+	font-size: 50px;
+    -webkit-text-fill-color: black;
+	z-index:1;
+}
+
+p1 {
+    font-family: 'SpaceMono-Regular';
+    -webkit-text-fill-color: black;
+    font-size: 17px;
+	z-index:1;
+}
+
+.buttontext {
+  font-family: 'WorkSans-SemiBold';
+}
+
+.button {
+	background-color: black;
+	border: none;
+  	color: white;
+  	padding: 5px 10px;
+  	text-align: center;
+  	text-decoration: none;
+  	font-size: 16px;
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  justify-content: center;
+  text-align: center;
+  /*whatever width you want*/
+}
+
+.capinner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  vertical-align: middle;
+  /*whatever width you want*/
+}
+
+#footer {
+  position: fixed ;
+  left: 0 ;
+  bottom: 0 ;
+  z-index:0;
+}
