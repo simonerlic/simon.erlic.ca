@@ -1,7 +1,7 @@
 // JavaScript Document
 
 // Real Time Clock (not yet working)
-function realtimeClock() {
+function realTimeClock() {
 	
 	var clock = new Date();
 	
@@ -21,7 +21,7 @@ function realtimeClock() {
 	seconds = ("0" + seconds).slice(-2);
 	
 	// actually show the clock
-	document.getElementById('RTClock').innerHTML = 
-		hours + " : " + minutes + " : " + seconds + tod;
-	var t = setTimeout( realtimeClock, 500 );
+	document.getElementById('clock').innerHTML = hours + " : " + minutes + " : " + seconds;
+	document.getElementById('ampm').innerHTML = tod;
+	var t = setTimeout( realTimeClock, 500 );
 }
