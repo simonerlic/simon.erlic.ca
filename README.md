@@ -1,4 +1,5 @@
 ## Hi, my name is Simon Erlic
 And this is my website.
 
-[EDIT: Updated with less jank, a nicer design, and its even more mobile friendly now!]
+I have now added my custom start page to the site. Keep in mind that it's still a WIP though.
+
