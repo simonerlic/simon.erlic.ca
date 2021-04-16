@@ -9,6 +9,9 @@
     </head>
 	
     <body onload="realTimeClock()" bgcolor="#2a2a2a">
+	<script>
+	    document.getElementById("query").focus();
+	</script>
         <div class="outer">
             <div class="middle">
                 <div class="inner w3-animate-opacity">
@@ -17,7 +20,6 @@
                         <input type="search" id="query" name="q" placeholder="Search DuckDuckGo...">
                     </form>  
                     <script>
-                        document.getElementById("query").focus();
                         const f = document.getElementById('form');
                         const q = document.getElementById('query');
                         const search = 'https://duckduckgo.com/?t=ffab&q=';
