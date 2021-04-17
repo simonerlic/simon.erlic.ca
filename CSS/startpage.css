@@ -146,6 +146,17 @@ input {
     font-family: 'SpaceMono-regular';
 }
 
+.button[id = "reddit"]:hover{
+	border: none;
+    background: none;
+  	color: #d08770;
+  	padding: 10px;
+  	font-size: 12px;
+    align-content: center;
+    text-align: center;
+    font-family: 'SpaceMono-regular';
+}
+
 a {color: inherit; }
 
 .outer {
