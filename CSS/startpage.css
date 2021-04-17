@@ -171,6 +171,10 @@ a {color: inherit; }
   /*whatever width you want*/
 }
 
+.gap {
+  height: 10px;
+}
+
 #clock {
     width: 100%;
     font-size: 60px;
