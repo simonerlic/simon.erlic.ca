@@ -1,0 +1,195 @@
+/* CSS Document for main page. */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+}
+
+@font-face {
+	font-family: 'Inconsolata-Regular';
+	src: url("../fonts/Inconsolata-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'Karla-Regular';
+	src: url("../fonts/Karla-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'Karla-Bold';
+	src: url("../fonts/Karla-Bold.ttf");
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeInDelayed {
+    0% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+header {
+    color: RGB(232, 233, 240);
+    font-family: 'Karla-Bold';
+    font-size: 3vmax;
+    z-index: 1;
+}
+
+headerlight {
+    color: black;
+    font-family: 'Karla-Bold';
+    font-size: 3vmax;
+    z-index: 1;
+}
+
+subtext {
+    color: RGB(232, 233, 240);
+    font-family: 'Inconsolata-Regular';
+    font-size: 1vmax;
+    z-index: 1;
+}
+
+subtextlight {
+    color: black;
+    font-family: 'Inconsolata-Regular';
+    font-size: 1vmax;
+    z-index: 1;
+}
+
+.intro {
+    animation: fadeIn 2s;
+    padding-top:35vh;
+    padding-left: 10vw;
+    padding-right: 60vw;
+}
+
+.topcontainer {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+.makecircle {
+    border-radius: 50%;
+}
+
+.arrow {
+    animation: fadeInDelayed 2s;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #999;
+    border-right: 2px solid #999;
+    transition: 0.1s;
+}
+.arrow:hover {
+    border-top: 5px solid white;
+    border-right: 5px solid white;
+    width: 16px;
+    height: 16px;
+    transition: 0.1s;
+}
+
+.arrow-bottom {
+    transform: rotate(135deg);
+    margin: 20vh;
+}
+
+.aboutview {
+    height: 60vh;
+    background-color: white;
+}
+
+.personalintro {
+    margin-left:25vw;
+    padding-left: 5vw;
+    padding-right:30vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: white;
+}
+
+.crop {
+    float: left;
+    width: 25vw;
+    height: 60vh;
+    overflow:hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../src/blockplaced-smaller.jpeg');
+    padding-right: 5vw;
+}
+
+.projectview {
+    height: 75vh;
+    background-color: black;
+}
+
+.projectintro {
+    padding-left:5vw;
+    padding-right:5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.card {
+    margin-right:25px;
+    float:left;
+    transition: 0.3s;
+    width: 15vw;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* For adding rounded edges to the card's photos */
+.cardimage {
+    border-radius: 5px 5px 0 0;
+}
+  
+.container {
+    padding: 16px 16px;
+    
+}
+
+.contactview {
+    height: 35vh;
+    background-color: white;
+}
+
+.contact {
+    padding-left:5vw;
+    padding-right:30vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.footer {
+    padding: 10px;
+    height:5vh;   /* Height of the footer */
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+.button {
+    background-color: black;
+    border-color: black;
+    border-radius: 8px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 11px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.button:hover {
+    opacity:0.8;
+}
