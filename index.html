@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Simon Erlic</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Serif&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <!-- Blurred div for intro text -->
+    <div class="blur-main">
+        <div class="centered">
+
+            <h2>Hi there, I'm</h2>
+            <h1>Simon Erlic</h1>
+
+            <br>
+            <div id="tagline">
+                <p>I'm a software engineering student studying at the University of Victoria interested in finding solutions to complex and interesting problems. </p>
+            </div>
+
+            <br>
+            <button class="button"><a href="https://github.com/simonerlic" target="_blank">GitHub</a></button>
+            <button class="button"><a>Resume</a></button>
+            <br>
+            <br>
+
+            <i class="triangle_down" onClick="document.getElementById('about').scrollIntoView();"></i>
+
+        </div>
+
+        <br>
+        
+
+    </div>
+
+    <!-- This canvas is for the dithered gradient effect -->
+    <canvas class="dither" id="landing-dither">
+    </canvas>
+
+    <div class="about" id="about">
+        <div class="about-title">
+            <h1>About me</h1>
+        </div>
+		
+        <div class="about-intro-container">
+			<div class="about-flex">
+
+				<img class="about-photo" src="src/prof-crop.jpg"  alt="A profile photo of me">
+
+				<div class="about-item">
+					<h2> Hi, there! My name is Simon. I'm a software engineering student currently studying at the University of Victoria. </h2>
+					<p>I love working on challenging problems, creating simple and elegant solutions, and learning new skills along the way.</p>
+				</div>				
+			</div>
+        </div>  
+        <div class="about-card-container">
+            <div class="about-card">
+                <h2>Hello!</h2>
+            </div> 
+        </div>
+    </div>
+
+    <div class="footer">
+        <subtext style="font-size: smaller;">Made with ❤ by Simon Erlic</subtext> 
+    </div>
+
+    
+    
+    <!-- Support scripts for the dithered gradient -->    
+    <script type="modules" src="js/three.module.js"></script>
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.148.0/build/three.module.js"
+        }
+    }
+    </script>
+    <script type="module" src="js/dithergrad.js"></script>
+
+</body>
+</html>
