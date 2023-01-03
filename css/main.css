@@ -105,6 +105,8 @@ ul {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+
+    z-index: 1;
 }
 
 .center {
@@ -125,7 +127,7 @@ ul {
 
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.7);
-    height: auto;
+
     min-height: 100vh;
     width: 100vw;
     position: relative;
@@ -356,6 +358,8 @@ ul {
     border-right: 2px solid white;
     border-top: 2px solid white;
     transform: rotate(135deg);
+
+    z-index: 1;
 
     margin-top: 20px;
     margin-left: 5px;
