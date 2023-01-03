@@ -30,6 +30,16 @@ h2 {
     color: #dddddd;
 }
 
+h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem !important;
+    line-height: 1em;
+
+    margin: 0px;
+    color: #dddddd;
+}
+
 p {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
@@ -41,8 +51,29 @@ p {
 }
 
 a { 
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+
+    font-size: 0.85rem !important;
+
     text-decoration: none; 
+    color: white;
+}
+
+a#button { 
+    font-family: 'IBM Plex Mono', monospace;
+    color: black;
+    text-decoration: none; 
+}
+
+hr {
+    opacity: 20%;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+ul {
+    padding-left: 30px;
 }
 
 .blur-main {
@@ -59,11 +90,27 @@ a {
     padding-right: 50px;
 }
 
-.centered {
+.vertical-center {
     margin: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.horizontal-center {
+    margin: 0;
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #tagline {
@@ -76,7 +123,8 @@ a {
 
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.7);
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     width: 100vw;
     position: relative;
     top: 0;
@@ -93,8 +141,6 @@ a {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 30px;
-
-    
 }
 
 .about-intro-container {
@@ -106,9 +152,15 @@ a {
 
 .about-card-container {
     display: flex;
+    flex-wrap: wrap;
     
     justify-content: center;
     align-items: center;
+
+    margin-top: 10px;
+
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .about-photo {
@@ -139,18 +191,112 @@ a {
 
 .about-card {
     /* blue - purple gradient */
-    background: linear-gradient(135deg, #2c2e33 0%, #3b363f 100%);
+    background: linear-gradient(135deg, #2b2b2b 0%, #494949 100%);
 
     border-radius: 10px;
     padding: 10px;
+    margin: 10px;
 
-    width: 45%;
+    width: auto;
+    min-width: 200px;
+
+    min-height: 205px;
+
+    transition: 0.2s;
+}
+
+.about-card:hover {
+    box-shadow:inset 0px 0px 0px 2.5px rgba(255, 255, 255, 0.1);
+    transition: 0.2s;
+}
+
+.cardtitle {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem !important;
+    line-height: 1em;
+
+    margin: 0px;
+    color: #dddddd;
+}
+
+.cardsection {
+    font-weight: 400;
+    font-size: 1rem !important;
+    line-height: 1em;
+
+    margin-top: 15px;
+    color: #dddddd;
+}
+
+.carddetails {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem !important;
+    line-height: 1em;
+
+    margin-bottom: 0px;
+    color: #dddddd;
+}
+
+.cardtext {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem !important;
+    line-height: 1em;
+
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+#education-card {
+    /* green - blue gradient */
+    background: linear-gradient(135deg, #153da1 0%, #622891 100%);
+    min-width: 260px;
+}
+
+#languages-card {
+    background: linear-gradient(135deg, #482891 0%,  #6a067b 100%);
+    min-width: 260px;
+}
+
+#work-card {
+    /* green - blue gradient */
+    background: linear-gradient(135deg, #54067b 0%, #8f1b6c 100%);
+    min-width: 260px;
+    max-width: 320px;
+}
+
+.contact {
+    scroll-snap-stop: normal;
+    scroll-snap-align: start;
+
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.7);
+    height: calc(100vh - 60px);
+    width: 100vw;
+
+    position: relative;
+    top: 0;
+
+    padding-top: 10px;
+}
+
+.contact-title {
+    text-align: center;
+
+    height: 50px;
+    width: auto;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
 }
 
 .footer {
     font-family: 'IBM Plex Sans', sans-serif;
     padding: 10px;
-    height:5vh;  
+    height: 20px;  
     align-items: center;
     text-align: center;
     color: white;
@@ -212,6 +358,7 @@ a {
     margin-top: 20px;
     margin-left: 5px;
 
+    transition-duration: 0.1s;
 }
 
 .triangle_down:hover {

@@ -13,7 +13,7 @@
 <body>
     <!-- Blurred div for intro text -->
     <div class="blur-main">
-        <div class="centered">
+        <div class="vertical-center">
 
             <h2>Hi there, I'm</h2>
             <h1>Simon Erlic</h1>
@@ -24,8 +24,8 @@
             </div>
 
             <br>
-            <button class="button"><a href="https://github.com/simonerlic" target="_blank">GitHub</a></button>
-            <button class="button"><a>Resume</a></button>
+            <button class="button"><a href="https://github.com/simonerlic" id="button" target="_blank">GitHub</a></button>
+            <button class="button"><a id="button">Resume</a></button>
             <br>
             <br>
 
@@ -34,8 +34,6 @@
         </div>
 
         <br>
-        
-
     </div>
 
     <!-- This canvas is for the dithered gradient effect -->
@@ -53,20 +51,81 @@
 				<img class="about-photo" src="src/prof-crop.jpg"  alt="A profile photo of me">
 
 				<div class="about-item">
-					<h2> Hi, there! My name is Simon. I'm a software engineering student currently studying at the University of Victoria. </h2>
-					<p>I love working on challenging problems, creating simple and elegant solutions, and learning new skills along the way.</p>
+					<h2> Welcome! </h2>
+					<p> I'm a <b>student</b>, <b>FIRST alumnus</b>, and <b>self described maker</b> from Victoria, BC.
+                        I love working on challenging problems, creating simple and elegant solutions, and picking up 
+                        new skills and knowledge along the way.
+                    </p>
+                    <p> 
+                        If you've read this far, you might be interested in knowing a bit more about my skills and experience. 
+                        If that's the case, please see the knowledge cards below.
+                    </p>
 				</div>				
 			</div>
         </div>  
         <div class="about-card-container">
-            <div class="about-card">
-                <h2>Hello!</h2>
+            <div class="about-card" id="education-card">
+                <h2 class="cardtitle">Education</h2>
+                <hr>
+                <h3 class="cardsection"><b>High School</b> (Graduated 2019)</h3> 
+                <p class="cardtext">
+                    St. Michaels University School
+                </p>
+                <h3 class="cardsection">University (Expected 2025)</h3> 
+                <p class="cardtext">
+                    Started attending the University of Victoria
+                </p>
             </div> 
+            <div class="about-card" id="languages-card">
+                <h2 class="cardtitle">Languages</h2>
+                <hr>
+                <h3 class="cardsection"><b>What I know well</b></h3> 
+                <p class="cardtext">
+                    C, C++, Python, JavaScript
+                </p>
+                <h3 class="cardsection"><b>What I have used before:</b></h3> 
+                <p class="cardtext">
+                    Java, C#, TypeScript 
+                </p>
+            </div> 
+            <div class="about-card" id="work-card">
+                <h2 class="cardtitle">Work Experience</h2>
+                <hr>
+                <h3 class="cardsection"><b>June 2022 - December 2022</b></h3> 
+
+                <p class="cardtext">
+                    Software Engineering Co-op at <a href="https://www.pmdi.com/" target="_blank">Polaris Motion</a>
+                </p>
+
+                <ul class="cardtext">
+                    <li>Used my knowledge in C# and OpenCV to create a machine vision application with a WPF frontend.</li>
+                    <br>
+                    <li>Worked on an RPC implementation with gRPC and Protobufs using Python, JavaScript, C++, and C#.</li>
+                </ul>
+
+            </div> 
+        </div>
+
+        <div class="horizontal-center">
+            <i class="triangle_down" onClick="document.getElementById('contact').scrollIntoView();"></i>
+        </div>
+        
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="contact-title">
+            <div class="center">
+                <h2>Interested in working with me or learning more?</h2>
+                <p>Please, reach out using any of the methods below.</p>
+                <br>
+                <button class="button"><a href="mailto:simon@erlic.ca" id="button">Email</a></button>
+                <button class="button"><a href="https://ca.linkedin.com/in/simonerlic" id="button">LinkedIn</a></button>
+            </div>
         </div>
     </div>
 
     <div class="footer">
-        <subtext style="font-size: smaller;">Made with ❤ by Simon Erlic</subtext> 
+        <subtext style="font-size: smaller;">Made with ❤ by Simon Erlic, 2023</subtext> 
     </div>
 
     
